@@ -31,8 +31,6 @@ include_directories(
 set(SSD_CAFFE_PATH "$ENV{HOME}/ssdcaffe/distribute")
 ####################################################################################################
 
-AW_CHECK_CUDA()
-
 if(USE_CUDA AND EXISTS "${SSD_CAFFE_PATH}")
   include_directories(${CUDA_INCLUDE_DIRS})
 
