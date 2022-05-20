@@ -28,7 +28,8 @@ include_directories(
 
 #####SSD########
 ##############################SSD'sFORK of CAFFE NEEDS TO BE PREVIOUSLY COMPILED####################
-set(SSD_CAFFE_PATH "$ENV{HOME}/ssdcaffe/distribute")
+set(SSD_CAFFE_PATH "/home/autoware/ssdcaffe")
+set(USE_CUDA ON)
 ####################################################################################################
 
 if(USE_CUDA AND EXISTS "${SSD_CAFFE_PATH}")
